@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Form</title>
+        <link rel="stylesheet" href="schoolform.css">
+        <style></style>
+
+    </head>
+    <script>
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const submitBtn = document.querySelector('input[type="submit"]');
+    
+    submitBtn.addEventListener("click", function (e) {
+        e.preventDefault(); // Stop actual form submission
+
+        // Collect form fields
+        const name = document.querySelector('input[placeholder="asta"]');
+        const phone = document.querySelector('input[placeholder="123456789"]');
+        const birth = document.querySelector('input[type="date"]');
+        const email = document.querySelector('input[type="email"]');
+        const address = document.querySelector('input[placeholder="123 Main St"]');
+        const sog = document.querySelector('input[placeholder="123 Main St"]').nextElementSibling.nextElementSibling;
+        const lga = sog.nextElementSibling.nextElementSibling;
+
+        const jambScore = document.querySelector('input[type="text"]:last-of-type');
+        const olevelFile = document.querySelector('input[type="file"]:nth-of-type(1)');
+        const jambFile = document.querySelector('input[type="file"]:nth-of-type(2)');
+        const reasonFile = document.querySelector('input[type="file"]:nth-of-type(3)');
+
+        // Check if required fields are filled
+        if (
+            !name.value || !phone.value || !birth.value || !email.value ||
+            !address.value || !sog.value || !lga.value || !jambScore.value ||
+            !olevelFile.files.length || !jambFile.files.length || !reasonFile.files.length
+        ) {
+            alert("Please fill out all required fields and upload all necessary documents.");
+            return;
+        }
+
+        // Simulate form submission
+        console.log("Form submitted with:");
+        console.log("Name:", name.value);
+        console.log("Phone:", phone.value);
+        console.log("Birth Date:", birth.value);
+        console.log("Email:", email.value);
+        console.log("Address:", address.value);
+        console.log("State of Origin:", sog.value);
+        console.log("LGA:", lga.value);
+        console.log("JAMB Score:", jambScore.value);
+        console.log("O'Level Result:", olevelFile.files[0].name);
+        console.log("JAMB File:", jambFile.files[0].name);
+        console.log("Reason File:", reasonFile.files[0].name);
+
+        alert("Form submitted successfully!");
+    });
+});
+</script>
+
+    </script>
+    <body>
+        
+<h3 class="Tl-text">
+    3147 Patterson Street, <br>Houston, TX, 77002
+</h3>
+    <p class="YU-text">@acmeuniversity.com
+    <br>www.acmeuniversity.com
+    <br>(123) 1234567</p>
+
+
+
+<br><h1 class="UF-text">
+    D T's University Addmission Form
+</h1>
+
+<p class="form-text">
+    please fill Out the Form Below to Submit Your Addmission Form!
+</p>
+
+<p class="PI-text">
+    Personal Information
+</p>
+
+<fieldset>
+<p>
+    <label for="name">
+        Name:
+    </label>
+    <input type="text" placeholder="asta">
+    <label for="Phone">
+        Phone:
+    </label>
+    <input type="tel" placeholder="123456789">
+</p>
+
+<p>
+    <label for="birth">
+        Birth:
+    </label>
+    <input type="date" placeholder="01/01/2000">
+</p>
+
+<p>
+    <label for="email">
+        e.mail
+    </label>
+    <input type="email" placeholder="abc@gmail.com">
+</p>
+
+<p>
+    <label for="Address">
+        Add:
+    </label>
+    <input type="text" placeholder="123 Main St">
+
+    <label for="SOG">
+        State of Origin:
+    </label>
+    <input type="text">
+
+    <label for="lga">
+        LGA:
+    </label>
+    <input type="text">
+</p>
+</fieldset>
+
+<p class="UFc-text">
+    EDUCATIONAL BACKGROUND
+</p>
+<fieldset>
+    <p class="PI-text">
+        Secondary School
+    </p>
+    <p><label for="SN">
+        School Name
+    </label>
+    <input type="text">
+
+    <label for="add">
+        School Add:
+    </label>
+    <input type="text">
+    </p>
+    
+    <p>
+        <label for="SN">
+        School Name
+    </label>
+    <input type="text">
+
+    <label for="add">
+        School Add:
+    </label>
+    <input type="text">
+    </p>
+
+    <p>
+        <label for="tre">
+            Date Graduated
+        </label>
+        <input type="date">
+        
+        <label for="O'level result">
+            O'level Result
+        </label>
+        <input type="file">
+    </p>
+    <br><label for="jamb">
+        Jamb Score
+    </label>
+    <input type="text">
+    <input type="file">
+</fieldset>
+
+<p class="UFc-text">
+    Reason for choosing D T's University
+    <fieldset><p><input type="file"></p></fieldset>
+</p>
+<p><br><input type="Submit"></p>
+    </body>
+</html>

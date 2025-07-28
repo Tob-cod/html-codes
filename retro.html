@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Clone</title>
+    <style>
+      .ggl-img{
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .srcbar{
+        margin-left: 20px;
+        white-space: nowrap;
+        width: 500px;
+        border: none;
+        overflow: visible;
+        text-overflow: unset;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        padding-left: 13px;
+        font-size: smaller;
+        overflow-x: auto;
+        display: block;
+        margin: auto;
+      }
+
+      .fistnm,
+      .firname{
+        height: 25px;
+        padding-left: 12px;
+        width: 100px;
+        border-radius: 4px;
+        border: 1px solid rgb(188, 188, 188);
+      }
+
+      .email
+      {
+         height: 25px;
+        padding-left: 12px;
+        border-radius: 4px;
+        border: 1px solid rgb(188, 188, 188);
+        width: 219px;
+        margin-top: 8px;
+      }
+
+      .SU-button{
+        background-color: rgb(38, 38, 237);
+        color: white;
+        width: 234.5px;
+        border: none;
+        border-radius: 4px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      .SU-button:hover{
+        background-color: blue;
+      }
+
+      .title-text{
+        font-family: Arial;
+        font-size: 25px;
+        margin-bottom: 1px;
+      }
+
+      .block-text{
+        border-radius: 0px;
+        background-color: rgb(235, 235, 235);
+        border: none;
+        padding-left: 15px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        width: 250px;
+        font-size: 10px;
+        font-weight: 600px;
+        margin-top: 3px;
+      }
+
+      .lock-text{
+        border-radius: 0px;
+        background-color: rgb(235, 235, 235);
+        border: none;
+        padding-left: 15px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        width: 250px;
+        font-size: 10px;
+        font-weight: 600px;
+        margin-top: 3px;
+      }
+
+      .req-button{
+        color: white;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-right: 10px;
+        padding-top: 8px;
+        font-size: 9px;
+        border-radius: 0px;
+        background-color: black;
+        border: none;
+        transition: 0.15s;
+      }
+
+      .req-button:active{
+        background-color: white;
+        color: black;
+      }
+
+      .schel-button{
+        color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-right: 10px;
+        padding-top: 8px;
+        font-size: 9px;
+        border-radius: 0px;
+        border-radius: 0px;
+        border: none;
+        background-color: rgb(235, 235, 235);
+        margin-left: 6px;
+        transition: 0.15s;
+      }
+
+      .schel-button:active{
+        background-color: black;
+        color: rgb(235, 235, 235);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="ggl-img" src="ggl.png">
+    <input class="srcbar" placeholder="Search Google or type a URL">
+
+    <p>
+      <input class="firname" type="text" placeholder="First name">
+      <input class="fistnm" type="text" placeholder="First name">
+      <br><input class="email" type="text" placeholder="Email">
+      <br><button class="SU-button">Sign Up</button>
+    </p>
+      <p class="title-text">
+        Request a ride now
+      </p>
+
+      <p>
+        <input class="block-text" type="text" placeholder="Enter pickup location">
+        <br><input class="lock-text" type="text" placeholder="Enter destination">
+
+        <p>
+          <button class="req-button">Request now</button>
+          <button class="schel-button">Scheldule for later</button>
+        </p>
+      </p>
+    
+  </body>
+</html>

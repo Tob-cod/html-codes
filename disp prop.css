@@ -1,0 +1,14 @@
+.name-text{
+    margin-bottom: 3px;
+}
+
+.tret{
+    width: 300px;
+    height: 200px;
+    vertical-align: middle;
+}
+.yes,
+.no{
+    display: inline-block;
+}
+

@@ -1,0 +1,31 @@
+.title-text{
+        font-family: Inter, sans-serif;
+        color: rgb(44, 51, 69);
+        text-align: center;
+        line-height: 46px;
+        height: 46px;
+
+        
+    }
+
+    .form-text{
+        font-family: Inter, sans-serif;
+        color: rgb(44, 51, 69);
+        text-align: center;
+        box-sizing: border-box;
+        height: 50px;
+        line-height: 0px;
+        font-weight: 500;
+        font-size: 16px;
+
+    }
+
+    .edubg-text{
+        font-family: Arial;
+        text-align: center;
+        color: black;
+        font-size: x-large;
+        font-weight: bold;
+        color: rgb(44, 51, 69);
+
+    }
